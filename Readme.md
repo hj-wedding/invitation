@@ -1,1 +1,1 @@
-https://bysujin.github.io/wedding-card/
+문혁준 한혜진 모바일 청첩장
