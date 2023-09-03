@@ -1,6 +1,10 @@
 // Add your javascript here
 // Don't forget to add it into respective layouts where this js file is needed
 $(document).ready(function () {
+    $("hj-account").on("click")
+    {
+        alert("님의 메시지가 정상적으로 전송되었습니다.");
+    }
     $("#map-image").on("click")
     {
 
