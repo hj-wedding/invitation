@@ -614,7 +614,7 @@
                                     </div>
                                     <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; border-radius: 51px; border: 0.50px rgba(9.21, 121.76, 170, 0.60) solid; justify-content: center; align-items: center; gap: 2px; display: flex">
                                         <div style="width: 12px; height: 12px; position: relative; background-image: url(docs/svg/account.svg);"></div>
-                                        <div class="account" style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="copy_to_clipboatd('bride')">계좌번호</div>
+                                        <div class="account" style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="popup('bride')">계좌번호</div>
                                     </div>
                                 </div>
                             </div>
@@ -672,10 +672,19 @@
                     </div>
                 </div>
                 <!-- Ending -->
+                
+                <div> 
+                    <div id="popup" class="white_content">
+                        <p id="popup-p">계좌번호</p>
+                        <div id="copy-btn" onclick="copy()">복사하기</div>
+                        <div id="popup-close" onclick="document.getElementById('popup').style.display='none'; document.getElementById('popup-back').style.display='none';">닫기</div>
+                    </div>
+                    <div id="popup-back" class="black_overlay"></div>
+                </div>
             </div>
         </div>
 
-        <script type="text/javascript">
+        <script type="text/javascript" c>
             const groom = ['010123', '1234']
             const groom_mom = ['010123', '1234']
             const bride = ['01062019612', '예금주: 한혜진\n 우리 1002-1234-5677']
@@ -712,6 +721,44 @@
 
             }
 
+            function copy() {
+                text = document.getElementById('popup-p').innerText
+                navigator.clipboard.writeText(text).then(() => {
+                    console.log(text);
+                    console.log(text);
+
+                });
+            }
+
+            function popup(who) {
+                document.getElementById('popup').style.display = 'block';
+                document.getElementById('popup-back').style.display = 'block';
+                document.getElementById('copy-btn').addEventListener(onclick, copy_to_clipboatd(who))
+                
+                switch(who) {
+                    case 'groom':
+                        number = groom[account_idx];
+                        break;
+                    case 'groom_mom':
+                        number = groom_mom[account_idx];
+                        break;
+                    case 'bride':
+                        number = bride[account_idx];
+                        break;
+                    case 'bride_mom':
+                        number = bride_mom[account_idx];
+                        break;
+                    case 'bride_dad':
+                        number = bride_dad[account_idx];
+                        break;
+                    default:
+                        number = '112'
+                        break
+                }
+                document.getElementById('popup-p').innerText = number
+                console.log(who)
+            }
+
             function copy_to_clipboatd(who){
                 switch(who) {
                     case 'groom':
@@ -734,8 +781,10 @@
                         break
                 }
 
-                navigator.clipboard.writeText(bride[1]).then(() => {
-                    alert(number);
+                navigator.clipboard.writeText(number).then(() => {
+                    console.log(who);
+                    console.log(number);
+
                 });
             }
 
