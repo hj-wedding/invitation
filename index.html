@@ -5,7 +5,7 @@
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <script src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
-        <script src="https://unpkg.com/react-copy-to-clipboard/build/react-copy-to-clipboard.js"></script>
+        <!-- <script src="https://cdn.statically.io/gh/zenorocha/clipboard.js/v2.0.11/dist/clipboard.min.js"></script> -->
 
     </head>
 
@@ -762,7 +762,7 @@
                         break
                 }
 
-                window.navigator.clipboard.writeText(bride[1]).then(() => {
+                navigator.clipboard.writeText(bride[1]).then(() => {
                     alert(number);
                 });
             }
