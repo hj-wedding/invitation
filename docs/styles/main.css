@@ -47,3 +47,10 @@
   #copy-btn, #popup-close {
     z-index: 1003;
   }
+
+  #copy_alert {
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    /* width: 50%; */
+  }
