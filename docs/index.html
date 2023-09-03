@@ -1,448 +1,775 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>최원영과 이소민의 결혼식</title>
-    <meta content="최원영과 이소민의 결혼식에 와서 축하해주세요~!" name="description"/>
-    <meta property="og:image" content="images/pic2.jpeg">
-    <meta property="fb:app_id" content="781066922265598" />
-    <meta property="fb:admins" content="Choi.Anderson"/>
-    <link href="images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-    <link href="images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-    <link href="images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-    <link href="css/ekko-lightbox.css" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Gugi|Noto+Serif+KR|Stylish|Sunflower:300"
-          rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <script src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-copy-to-clipboard/build/react-copy-to-clipboard.js"></script>
 
+    </head>
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        function sendMail() {
+    <body>
+        <div style="width: 100%; height: 100%; padding-bottom: 109px; background: linear-gradient(0deg, #F4FCFF 0%, #F4FCFF 100%), linear-gradient(0deg,  0%,  100%); flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+            <div style="align-self: stretch; height: 4970px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 70px; display: inline-flex">
+                <!-- Cover -->
+                <div style="padding-top: 32px; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+                    <div style="width: 360px; height: 724px; position: relative">
+                        <img style="width: 100%; height: 100%" src="images/Cover Image.png" />
+                        <!-- <img style="width: 488px; height: 96px; left: -60px; top: 644px; position: absolute" src="https://via.placeholder.com/488x96" /> -->
+                        <!-- <img style="width: 488px; height: 656px; left: -60px; top: 9px; position: absolute" src="https://via.placeholder.com/488x656" /> -->
+                        <!-- <div style="width: 211px; height: 41px; left: 75px; top: 559px; position: absolute">
+                            <img style="width: 64px; height: 39px; left: 74px; top: 0px; position: absolute" src="https://via.placeholder.com/64x39" />
+                            <div style="left: 0px; top: 0px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 81px; display: inline-flex">
+                                <div style="text-align: center; color: #097AAA; font-size: 22px; font-family: MaruBuriOTF; font-weight: 700; line-height: 40.92px; word-wrap: break-word">문혁준</div>
+                                <div style="text-align: center; color: #097AAA; font-size: 22px; font-family: MaruBuriOTF; font-weight: 700; line-height: 40.92px; word-wrap: break-word">한혜진</div>
+                            </div>
+                        </div>
+                        <div style="left: 83px; top: 603px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                            <div style="text-align: center; color: #097AAA; font-size: 16px; font-family: MaruBuriOTF; font-weight: 400; line-height: 29.76px; word-wrap: break-word">2023.10.8 일요일 오후 4:30</div>
+                            <div style="text-align: center; color: #097AAA; font-size: 16px; font-family: MaruBuriOTF; font-weight: 400; line-height: 29.76px; word-wrap: break-word">마리나파크 웨딩홀</div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- Cover -->
 
-            (function () {
-                emailjs.init("user_yjLL5xG0A3kkOCH5BGIDh");
-                emailjs.send("wedding-mail", "gift_send", {
-                    name: $("#sender-name").value,
-                    gift: $("#gift-name").text(),
-                    message: $("#sender-message").value
-                }).then(function (response) {
-                    console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-                }, function (err) {
-                    console.log("FAILED. error=", err);
-                });
-            })();
-        }
+                <!-- Invitaion -->
+                <div style="height: 479px; flex-direction: column; justify-content: center; align-items: center; gap: 15px; display: flex">
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: center; gap: 7px; display: inline-flex">
+                        <div style="text-align: center; color: #47B8E1; font-size: 36px; font-family: Pinyon Script; font-weight: 400; line-height: 66.96px; letter-spacing: 0.72px; word-wrap: break-word">Invitation</div>
+                        <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 26.04px; word-wrap: break-word">함께 있을 때 가장 즐거운 두 사람이<br/>평생의 행복을 위한 약속을 하려 합니다.<br/>동화처럼 밝고 아름다운 모습으로<br/>항상 서로를 아끼고 사랑하며 살아가겠습니다.<br/>부디 오셔서 따뜻한 축복으로 지켜봐 주신다면<br/>그 고마움 오래도록 잊지 않고 간직하겠습니다</div>
+                    </div>
+                    <div style="width: 360px; height: 234px; position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                        <div style="width: 360px; height: 139px; position: relative">
+                            <div style="width: 360px; height: 139px; left: 0px; top: 0px; position: absolute; background: white"></div>
+                            <img style="width: 341px; height: 220px; left: 10px; top: 5px; position: absolute" src="images/invitaion.png" />
+                        </div>
+                        <div style="flex-direction: column; justify-content: center; align-items: flex-end; display: inline-flex">
+                            <div style="justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                                <div style="justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+                                    <div style="justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                                        <div style="text-align: center; color: #097AAA; font-size: 11px; font-family: Noto Serif KR; font-weight: 400; line-height: 20.46px; word-wrap: break-word">故</div>
+                                        <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 26.04px; word-wrap: break-word">문성호 </div>
+                                    </div>
+                                    <div style="text-align: center; color: #097AAA; font-size: 11px; font-family: MaruBuriOTF; font-weight: 400; line-height: 20.46px; word-wrap: break-word">·</div>
+                                    <div style="justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                                        <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 26.04px; word-wrap: break-word">김형영</div>
+                                        <div style="padding-top: 3.60px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                                            <div style="text-align: center; color: #097AAA; font-size: 11px; font-family: MaruBuriOTF; font-weight: 400; line-height: 20.46px; word-wrap: break-word">의</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                                    <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 26.04px; word-wrap: break-word">장남</div>
+                                    <div style="padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                                        <div style="text-align: center; color: #097AAA; font-size: 20px; font-family: MaruBuriOTF; font-weight: 700; line-height: 37.20px; word-wrap: break-word">혁준</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                                <div style="justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+                                    <div style="justify-content: flex-start; align-items: center; gap: 1.20px; display: flex">
+                                        <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 26.04px; word-wrap: break-word">한철영</div>
+                                    </div>
+                                    <div style="text-align: center; color: #097AAA; font-size: 11px; font-family: MaruBuriOTF; font-weight: 400; line-height: 20.46px; word-wrap: break-word">·</div>
+                                    <div style="justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                                        <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 26.04px; word-wrap: break-word">강영미</div>
+                                        <div style="padding-top: 3.60px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                                            <div style="text-align: center; color: #097AAA; font-size: 11px; font-family: MaruBuriOTF; font-weight: 400; line-height: 20.46px; word-wrap: break-word">의</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                                    <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 26.04px; word-wrap: break-word">장녀</div>
+                                    <div style="padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                                        <div style="text-align: center; color: #097AAA; font-size: 20px; font-family: MaruBuriOTF; font-weight: 700; line-height: 37.20px; word-wrap: break-word">혜진</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div style="width: 360px; height: 97px; position: relative">
+                            <div style="width: 360px; height: 97px; left: 0px; top: 0px; position: absolute; background: white"></div>
+                            <img style="width: 341px; height: 220px; left: 10px; top: -132px; position: absolute" src="images/invitaion.png" />
+                        </div> -->
+                    </div>
+                </div>
+                <!-- Invitaion -->
 
-        function findGetParameter(parameterName) {
-            var result = null,
-                tmp = [];
-            location.search
-                .substr(1)
-                .split("&")
-                .forEach(function (item) {
-                  tmp = item.split("=");
-                  if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
-                });
-            return result;
-        }
+                <!-- Calaender -->
+                <div style="padding-bottom: 33px; padding-left: 45px; padding-right: 45px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 15px; display: flex">
+                    <div style="text-align: center; color: #47B8E1; font-size: 36px; font-family: Pinyon Script; font-weight: 400; line-height: 66.96px; letter-spacing: 0.72px; word-wrap: break-word">Save the Date</div>
+                    <div style="align-self: stretch; height: 324.64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 17.14px; display: inline-flex">
+                        <div style="width: 270px; padding-left: 112.53px; padding-right: 122.47px; justify-content: flex-start; align-items: center; display: inline-flex">
+                            <div style="text-align: center; color: #1799D0; font-size: 35px; font-family: Pinyon Script; font-weight: 400; line-height: 65.10px; letter-spacing: 0.70px; word-wrap: break-word">10</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                            <div style="width: 38.57px; height: 30px; justify-content: center; align-items: center; display: flex">
+                                <div style="width: 38.57px; height: 30px; text-align: center; color: #606164; font-size: 10.71px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">Mon</div>
+                            </div>
+                            <div style="width: 38.57px; height: 30px; justify-content: center; align-items: center; display: flex">
+                                <div style="width: 38.57px; height: 30px; text-align: center; color: #606164; font-size: 10.71px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">Tue</div>
+                            </div>
+                            <div style="width: 38.57px; height: 30px; justify-content: center; align-items: center; display: flex">
+                                <div style="width: 38.57px; height: 30px; text-align: center; color: #606164; font-size: 10.71px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">Wed</div>
+                            </div>
+                            <div style="width: 38.57px; height: 30px; justify-content: center; align-items: center; display: flex">
+                                <div style="width: 38.57px; height: 30px; text-align: center; color: #606164; font-size: 10.71px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">Thu</div>
+                            </div>
+                            <div style="width: 38.57px; height: 30px; justify-content: center; align-items: center; display: flex">
+                                <div style="width: 38.57px; height: 30px; text-align: center; color: #606164; font-size: 10.71px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">Fri</div>
+                            </div>
+                            <div style="width: 38.57px; height: 30px; justify-content: center; align-items: center; display: flex">
+                                <div style="width: 38.57px; height: 30px; text-align: center; color: #1799D0; font-size: 10.71px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">Sat</div>
+                            </div>
+                            <div style="width: 38.57px; height: 30px; justify-content: center; align-items: center; display: flex">
+                                <div style="width: 38.57px; height: 30px; text-align: center; color: #1799D0; font-size: 10.71px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">Sun</div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                            <div style="align-self: stretch; flex: 1 1 0; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #C9D2D7; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #C9D2D7; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">26</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-right: 2.43px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #C9D2D7; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">27</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #C9D2D7; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">28</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #C9D2D7; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">29</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #C9D2D7; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">30</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="width: 21.43px; padding-left: 6.43px; padding-right: 9px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #1799D0; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">1</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="align-self: stretch; flex: 1 1 0; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 4.29px; padding-right: 7.14px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 5.36px; padding-right: 6.07px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 4.29px; padding-right: 6.14px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 4.29px; padding-right: 7.14px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 4.29px; padding-right: 7.14px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 5.36px; padding-right: 7.07px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #1799D0; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">7</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width: 38.57px; height: 39.64px; position: relative">
+                                    <div style="width: 46px; height: 40px; left: -3.43px; top: -0.43px; position: absolute; background: #C9F4FF"></div>
+                                    <div style="height: 39.64px; padding: 8.57px; left: 0px; top: 0px; position: absolute; justify-content: center; align-items: center; gap: 10.71px; display: inline-flex">
+                                        <div style="padding-left: 3px; padding-right: 3.43px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #097AAA; font-size: 24px; font-family: MaruBuriOTF; font-weight: 700; word-wrap: break-word">8</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="align-self: stretch; flex: 1 1 0; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 4.29px; padding-right: 7.14px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #1799D0; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">9</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 1.07px; padding-right: 3.36px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 3.21px; padding-right: 6.21px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">11</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 2.14px; padding-right: 3.29px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">12</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 2.14px; padding-right: 3.29px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">13</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 1.07px; padding-right: 3.36px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #1799D0; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">14</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 2.14px; padding-right: 3.29px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #1799D0; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">15</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="align-self: stretch; flex: 1 1 0; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 2.14px; padding-right: 3.29px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">16</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 2.14px; padding-right: 4.29px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">17</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 2.14px; padding-right: 3.29px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">18</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 2.14px; padding-right: 3.29px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">19</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">20</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 2.14px; padding-right: 3.29px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #1799D0; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">21</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-right: 1.43px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #1799D0; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">22</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="align-self: stretch; flex: 1 1 0; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">23</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">24</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-right: 1.43px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">26</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">27</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-right: 1.43px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #1799D0; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">28</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-right: 1.43px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #1799D0; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">29</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="align-self: stretch; flex: 1 1 0; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">30</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 2.14px; padding-right: 3.29px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #606164; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">31</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="width: 21.43px; padding-left: 6.43px; padding-right: 9px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #C9D2D7; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">1</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 4.29px; padding-right: 7.14px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #C9D2D7; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 5.36px; padding-right: 6.07px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #C9D2D7; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 4.29px; padding-right: 6.14px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #C9D2D7; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="flex: 1 1 0; align-self: stretch; justify-content: center; align-items: center; display: flex">
+                                    <div style="width: 38.57px; height: 39.64px; padding: 8.57px; justify-content: center; align-items: center; gap: 10.71px; display: flex">
+                                        <div style="padding-left: 4.29px; padding-right: 7.14px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                            <div style="text-align: center; color: #C9D2D7; font-size: 17.14px; font-family: MaruBuriOTF; font-weight: 400; word-wrap: break-word">5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center; color: #097AAA; font-size: 16px; font-family: MaruBuriOTF; font-weight: 400; line-height: 29.76px; word-wrap: break-word">2023.10.8 일요일 오후 4:30</div>
+                </div>
+                <!-- Calaender -->
 
-        $(document).ready(function () {
+                <!-- 오시는 길-->
+                <div style="height: 824px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 24px; display: flex">
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 24px; display: flex">
+                        <div style="text-align: center; color: #47B8E1; font-size: 36px; font-family: Pinyon Script; font-weight: 400; line-height: 66.96px; letter-spacing: 0.72px; word-wrap: break-word">Location</div>
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 24px; display: flex">
+                            <div style="text-align: center; color: #097AAA; font-size: 16px; font-family: MaruBuriOTF; font-weight: 700; line-height: 29.76px; word-wrap: break-word">마리나파크 웨딩홀</div>
+                            <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word">서울시 서초구 신반포로 11길 40 한강공원<br/>(반포동 115-5번지) 서래나루 2층</div>
+                            <div style="justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                                <!-- 네이버 지도 연결 버튼-->
+                                <div style="padding-top: 6px; padding-bottom: 6px; padding-left: 20px; padding-right: 22px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 2px; display: flex; cursor: pointer;" onclick="window.location='https://naver.me/GqN6SNg5'">
+                                    <div style="width: 18px; height: 18px; padding-top: 3px; padding-bottom: 3px; padding-left: 3px; padding-right: 2.90px; justify-content: center; align-items: center; display: flex">
+                                        <div style="width: 12.10px; height: 12px; position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                                            <div style="width: 12.10px; height: 12px; background: #1799D0"></div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word">네이버 지도</div>
+                                </div>
+                                <!-- 네이버 지도 연결 버튼-->
 
-            function getText(){
-                var result = null;
-                $.ajax( { url: "https://raw.githubusercontent.com/AndersonChoi/wedding-card/master/README.md",
-                        type: 'get',
-                        dataType: 'html',
-                        async: false,
-                        success: function(data) { result = data; }
-                    }
-                );
-                FileReady = true;
-                return result;
-            }
-            var markdown_source = getText();
-            var comment_contents = markdown_source.split("축하의 말")[1];
+                                <!-- 카카오 지도 연결 버튼 https://place.map.kakao.com/1112271843-->
+                                <div style="padding-top: 6px; padding-bottom: 6px; padding-left: 20px; padding-right: 22px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 2px; display: flex; cursor: pointer;" onclick="window.location='https://kko.to/_k3DuTkvrV'">
+                                    <div style="width: 18px; height: 18px; position: relative">
+                                        <div style="width: 14.62px; height: 14.62px; left: 1.69px; top: 1.69px; position: absolute; background: #1799D0"></div>
+                                    </div>
+                                    <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word">카카오 지도</div>
+                                </div>
+                                <!-- 카카오 지도 연결 버튼-->
 
-            var md = new Remarkable();
-            $("#comments").append(md.render(comment_contents));
+                            </div>
+                        </div>
+                    </div>
+                    <img style="width: 328px; height: 246px" src="images/map.png" />
+                    <div style="height: 280px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+                        <div style="align-self: stretch; height: 69px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                            <div style="justify-content: flex-start; align-items: center; gap: 2px; display: inline-flex">
+                                <div style="width: 16px; height: 16px; position: relative">
+                                    <div style="width: 11px; height: 14px; left: 2.50px; top: 1.50px; position: absolute; background: #1799D0"></div>
+                                </div>
+                                <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 700; line-height: 22.82px; word-wrap: break-word">지하철</div>
+                            </div>
+                            <div style="align-self: stretch; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word">3, 7, 9 호선 고속터미널역<br/>6번 출구 앞에서 무료 셔틀버스 10~15분 간격 운행</div>
+                        </div>
+                        <div style="align-self: stretch; height: 69px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                            <div style="justify-content: flex-start; align-items: center; gap: 2px; display: inline-flex">
+                                <div style="width: 16px; height: 16px; position: relative">
+                                    <div style="width: 15px; height: 12px; left: 0.50px; top: 2px; position: absolute; background: #1799D0"></div>
+                                </div>
+                                <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 700; line-height: 22.82px; word-wrap: break-word">버스</div>
+                            </div>
+                            <div style="align-self: stretch; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word">잠수교 - 405, 740<br/>반포대교 남단 - 143, 401, 406, 8340</div>
+                        </div>
+                        <div style="align-self: stretch; height: 82px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                            <div style="justify-content: flex-start; align-items: center; gap: 2px; display: inline-flex">
+                                <div style="width: 16px; height: 16px; position: relative">
+                                    <div style="width: 15px; height: 11.50px; left: 0.50px; top: 2.50px; position: absolute; background: #1799D0"></div>
+                                </div>
+                                <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 700; line-height: 22.82px; word-wrap: break-word">자가용</div>
+                            </div>
+                            <div style="align-self: stretch; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word">주차: 서래나루 주차장, 한강 반포 제 2 주차장</div>
+                            <div style="align-self: stretch; color: #097AAA; font-size: 13.50px; font-family: MaruBuriOTF; font-weight: 400; line-height: 18.09px; word-wrap: break-word">* 반포대교가 아닌 잠수교를 이용하셔야 <br/>  진입 가능합니다.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 오시는 길-->
 
+                <!-- Gallary -->
+                <div style="width: 360px; height: 719px; position: relative">
+                    <div style="left: 132px; top: 0px; position: absolute; text-align: center; color: #47B8E1; font-size: 36px; font-family: Pinyon Script; font-weight: 400; line-height: 66.96px; letter-spacing: 0.72px; word-wrap: break-word">Gallery</div>
+                    <div style="left: 16px; top: 79px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: center; gap: 22px; display: inline-flex">
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                            <div style="width: 328px; height: 493px; position: relative; background: #D9D9D9"></div>
+                            <div style="width: 328px; justify-content: space-between; align-items: flex-start; gap: 7px; display: inline-flex">
+                                <div style="width: 47px; height: 71px; position: relative; background: #D9D9D9"></div>
+                                <div style="width: 47px; height: 71px; position: relative; background: #D9D9D9"></div>
+                                <div style="width: 47px; height: 71px; position: relative; background: #D9D9D9"></div>
+                                <div style="width: 47px; height: 71px; position: relative; background: #D9D9D9"></div>
+                                <div style="width: 47px; height: 71px; position: relative; background: #D9D9D9"></div>
+                                <div style="width: 47px; height: 71px; position: relative; background: #D9D9D9"></div>
+                            </div>
+                        </div>
+                        <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word">인스타그램 @hj_moment 계정에서 <br/>더 많은 사진을 감상하실 수 있습니다.</div>
+                    </div>
+                    <div style="width: 344px; left: 8px; top: 312px; position: absolute; justify-content: space-between; align-items: flex-start; gap: 102px; display: inline-flex">
+                        <div style="padding: 8px; opacity: 0.80; background: #C4E7F6; border-radius: 80px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                            <div style="width: 32px; height: 32px; position: relative">
+                                <div style="width: 13.01px; height: 23.01px; left: 21.50px; top: 4.50px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: white"></div>
+                            </div>
+                        </div>
+                        <div style="padding: 8px; opacity: 0.80; background: #C4E7F6; border-radius: 80px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                            <div style="width: 32px; height: 32px; position: relative">
+                                <div style="width: 13.01px; height: 23.01px; left: 10.50px; top: 4.50px; position: absolute; background: white"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallary -->
+
+                <!-- Instagram -->
+                <div style="height: 252px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 6px; display: flex">
+                        <div style="align-self: stretch; text-align: center; color: #47B8E1; font-size: 36px; font-family: Pinyon Script; font-weight: 400; line-height: 66.96px; letter-spacing: 0.72px; word-wrap: break-word">Sns Live</div>
+                    </div>
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 24px; display: flex">
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 11px; display: flex">
+                            <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word">참석이 어려운 분들을 위해<br/>@hj_moment 계정에서 <br/>인스타그램 라이브를 진행합니다. </div>
+                            <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                                <div style="text-align: center; color: #47B8E1; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word">*인스타그램 앱 설치와, 계정이 필요합니다.</div>
+                                <div style="text-align: center; color: #47B8E1; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word">*본식 이후 계정은 비공개 예정입니다.</div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 24px; padding-right: 24px; padding-top: 6px; padding-bottom: 6px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
+                            <div style="width: 18px; height: 18px; position: relative">
+                                <div style="width: 14.62px; height: 14.62px; left: 1.69px; top: 1.69px; position: absolute; background: #1799D0"></div>
+                            </div>
+                            <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word; cursor: pointer;" onclick="window.location='https://instagram.com/hj_moment?igshid=NzZhOTFlYzFmZQ=='">인스타그램 바로가기</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instagram -->
+
+                <!-- Contact -->
+                <div style="padding-left: 32px; padding-right: 32px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 40px; display: flex">
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+                        <div style="text-align: center; color: #47B8E1; font-size: 36px; font-family: Pinyon Script; font-weight: 400; line-height: 66.96px; letter-spacing: 0.72px; word-wrap: break-word">Contact</div>
+                        <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word">마음으로 축하를 전하려는 분들을 위해<br/>연락처와 계좌번호를 남깁니다.</div>
+                    </div>
+                    <div style="height: 255px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
+                        <div style="align-self: stretch; height: 85px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                            <div style="align-self: stretch; justify-content: space-between; align-items: center; gap: 40px; display: inline-flex">
+                                <div style="justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                                    <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.32px; word-wrap: break-word">신랑</div>
+                                    <div style="padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                                        <div style="text-align: center; color: #097AAA; font-size: 20px; font-family: MaruBuriOTF; font-weight: 700; line-height: 37.20px; word-wrap: break-word">문혁준</div>
+                                    </div>
+                                </div>
+                                <div style="justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                    <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                        <div style="width: 12px; height: 12px; position: relative">
+                                            <div style="width: 9.37px; height: 9.37px; left: 1.50px; top: 1.13px; position: absolute; background: #1799D0"></div>
+                                        </div>
+                                        <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="phoneCall('groom')">전화 연결</div>
+                                    </div>
+                                    <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; border-radius: 51px; border: 0.50px rgba(9.21, 121.76, 170, 0.60) solid; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                        <div style="width: 12px; height: 12px; position: relative">
+                                            <div style="width: 9px; height: 9px; left: 1.50px; top: 1.50px; position: absolute; background: #3F9DC5"></div>
+                                        </div>
+                                        <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="copy_to_clipboatd('groom')">계좌번호</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="align-self: stretch; justify-content: space-between; align-items: center; gap: 40px; display: inline-flex">
+                                <div style="justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                                    <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.32px; word-wrap: break-word">어머니</div>
+                                    <div style="padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                                        <div style="text-align: center; color: #097AAA; font-size: 16px; font-family: MaruBuriOTF; font-weight: 700; line-height: 29.76px; word-wrap: break-word">김형영</div>
+                                    </div>
+                                </div>
+                                <div style="justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                    <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                        <div style="width: 12px; height: 12px; position: relative">
+                                            <div style="width: 9.37px; height: 9.37px; left: 1.50px; top: 1.13px; position: absolute; background: #1799D0"></div>
+                                        </div>
+                                        <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="phoneCall('groom_mom')">전화 연결</div>
+                                    </div>
+                                    <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; border-radius: 51px; border: 0.50px rgba(9.21, 121.76, 170, 0.60) solid; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                        <div style="width: 12px; height: 12px; position: relative">
+                                            <div style="width: 9px; height: 9px; left: 1.50px; top: 1.50px; position: absolute; background: #3F9DC5"></div>
+                                        </div>
+                                        <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="copy_to_clipboatd('groom_mom')">계좌번호</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; height: 130px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                            <div style="align-self: stretch; justify-content: space-between; align-items: center; gap: 40px; display: inline-flex">
+                                <div style="justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                                    <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.32px; word-wrap: break-word">신부</div>
+                                    <div style="padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                                        <div style="text-align: center; color: #097AAA; font-size: 20px; font-family: MaruBuriOTF; font-weight: 700; line-height: 37.20px; word-wrap: break-word">한혜진</div>
+                                    </div>
+                                </div>
+                                <div style="justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                    <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                        <div style="width: 12px; height: 12px; position: relative">
+                                            <div style="width: 9.37px; height: 9.37px; left: 1.50px; top: 1.13px; position: absolute; background: #1799D0"></div>
+                                        </div>
+                                        <div class="number" style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="phoneCall('bride')">전화 연결</div>
+                                    </div>
+                                    <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; border-radius: 51px; border: 0.50px rgba(9.21, 121.76, 170, 0.60) solid; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                        <div style="width: 12px; height: 12px; position: relative">
+                                            <div style="width: 9px; height: 9px; left: 1.50px; top: 1.50px; position: absolute; background: #3F9DC5"></div>
+                                        </div>
+                                        <div class="account" style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="copy_to_clipboatd('bride')">계좌번호</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; gap: 40px; display: inline-flex">
+                                <div style="justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                                    <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.32px; word-wrap: break-word">아버지</div>
+                                    <div style="padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                                        <div style="text-align: center; color: #097AAA; font-size: 16px; font-family: MaruBuriOTF; font-weight: 700; line-height: 29.76px; word-wrap: break-word">한철영</div>
+                                    </div>
+                                </div>
+                                <div style="justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                    <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                        <div style="width: 12px; height: 12px; position: relative">
+                                            <div style="width: 9.37px; height: 9.37px; left: 1.50px; top: 1.13px; position: absolute; background: #1799D0"></div>
+                                        </div>
+                                        <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="phoneCall('bride_dad')">전화 연결</div>
+                                    </div>
+                                    <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; border-radius: 51px; border: 0.50px rgba(9.21, 121.76, 170, 0.60) solid; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                        <div style="width: 12px; height: 12px; position: relative">
+                                            <div style="width: 9px; height: 9px; left: 1.50px; top: 1.50px; position: absolute; background: #3F9DC5"></div>
+                                        </div>
+                                        <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="copy_to_clipboatd('bride_dad')">계좌번호</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; gap: 40px; display: inline-flex">
+                                <div style="justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                                    <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.32px; word-wrap: break-word">어머니</div>
+                                    <div style="padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                                        <div style="text-align: center; color: #097AAA; font-size: 16px; font-family: MaruBuriOTF; font-weight: 700; line-height: 29.76px; word-wrap: break-word">강영미</div>
+                                    </div>
+                                </div>
+                                <div style="justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                    <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                        <div style="width: 12px; height: 12px; position: relative">
+                                            <div style="width: 9.37px; height: 9.37px; left: 1.50px; top: 1.13px; position: absolute; background: #1799D0"></div>
+                                        </div>
+                                        <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="phoneCall('bride_mom')">전화 연결</div>
+                                    </div>
+                                    <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; border-radius: 51px; border: 0.50px rgba(9.21, 121.76, 170, 0.60) solid; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                        <div style="width: 12px; height: 12px; position: relative">
+                                            <div style="width: 9px; height: 9px; left: 1.50px; top: 1.50px; position: absolute; background: #3F9DC5"></div>
+                                        </div>
+                                        <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="copy_to_clipboatd('bride_mom')">계좌번호</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact -->
+
+                <!-- Ending -->
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 22px; display: flex">
+                    <div style="width: 360px; height: 498px; position: relative">
+                        <div style="width: 256px; height: 292px; left: 50px; top: 76px; position: absolute; background: #FAFEF0; border-radius: 9999px"></div>
+                        <img style="width: 360px; height: 541px; left: 0px; top: -43px; position: absolute" src="images/ending.png" />
+                        <img style="width: 68px; height: 63px; left: 141px; top: 402px; position: absolute" src="images/logo.png" />
+                    </div>
+                    <div style="height: 35px; padding-left: 24px; padding-right: 24px; padding-top: 6px; padding-bottom: 6px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+                        <div style="width: 18px; height: 18px; position: relative">
+                            <div style="width: 14.62px; height: 14.62px; left: 1.69px; top: 1.69px; position: absolute; background: #1799D0"></div>
+                        </div>
+                        <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word">카카오톡으로 공유하기</div>
+                    </div>
+                </div>
+                <!-- Ending -->
+            </div>
+        </div>
+
+        <script>
+            const groom = ['010123', '1234']
+            const groom_mom = ['010123', '1234']
+            const bride = ['01062019612', '예금주: 한혜진\n 우리 1002-1234-5677']
+            const bride_mom = ['01051539612', '예금주: 강영미\n 우리 1002-1234-5677']
+            const bride_dad = ['01063329612', '예금주: 한철영\n 우리 1002-1234-5677']
+            var number_idx = 0
+            var account_idx = 1
             
-            if(findGetParameter('gift')=='false'){
-                $('#gifts').hide();
+            function phoneCall(who) {
+                switch(who) {
+                    case 'groom':
+                        number = groom[number_idx];
+                        break;
+                    case 'groom_mom':
+                        number = groom_mom[number_idx];
+                        break;
+                    case 'bride':
+                        number = bride[number_idx];
+                        break;
+                    case 'bride_mom':
+                        number = bride_mom[number_idx];
+                        break;
+                    case 'bride_dad':
+                        number = bride_dad[number_idx];
+                        break;
+                    default:
+                        number = '112'
+                        break
+                }
+                
+                console.log(number)
+                window.location.href = 'tel:' + number
+
+
             }
-        });
 
+            function copy_to_clipboatd(who){
 
+                switch(who) {
+                    case 'groom':
+                        number = groom[account_idx];
+                        break;
+                    case 'groom_mom':
+                        number = groom_mom[account_idx];
+                        break;
+                    case 'bride':
+                        number = bride[account_idx];
+                        break;
+                    case 'bride_mom':
+                        number = bride_mom[account_idx];
+                        break;
+                    case 'bride_dad':
+                        number = bride_dad[account_idx];
+                        break;
+                    default:
+                        number = '112'
+                        break
+                }
 
+                window.navigator.clipboard.writeText(bride[1]).then(() => {
+                    alert(number);
+                });
+            }
 
-    </script>
-</head>
+        </script>
 
-<body id="top">
-<header></header>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2"></script>
-<div class="page-content">
-    <div class="div">
-        <div class="ww-home-page" id="home">
-            <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
-                <div class="container ww-announcement-container">
-                    <p class="ww-couple-name ww-title" style="font-size:4.0em">Wonyoung & Somin</p>
-                    <p class="h2 mt-5 ww-title" style="font-family: 'Gugi', cursive; font-size:1.0em">
-                        | WE ARE GETTING MARRIED |
-                    </p>
-                    <p class="h2 mt-5 ww-title"
-                       style="font-family: 'Noto Serif KR', serif; font-size:1.0em; letter-spacing:-1px">
-                        <b style="font-size:1.4em;">2019. 05. 18. SAT PM 02:30</b>
-                        <br>부산 해운대 센텀시티 센텀사이언스파크 23층
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="ww-nav-bar sticky-top bg-light">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <button aria-controls="ww-navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-                            class="navbar-toggler"
-                            data-target="#ww-navbarNav" data-toggle="collapse" type="button">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse text-uppercase" id="ww-navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#couple">Couple</a></li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#events">Events</a></li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">Gallery</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="ww-section" id="couple">
-            <div class="container">
-                <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">신랑 & 신부</h2>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <div class="mt-3">
-                            <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
-                                이소민</h3>
-                            <img alt="Groom" class="img-fluid" src="images/pic8.jpeg"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mt-3">
-                            <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
-                                최원영</h3>
-                            <img alt="Bride" class="img-fluid" src="images/pic9.jpeg"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ww-section bg-light" id="events">
-            <div class="container ww-wedding-event">
-                <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">초대합니다</h2>
-                    <div class="col text-center mb-5">
-                        <h6 style="font-family: 'Noto Serif KR', serif;">
-                            1463<br>
-                            (만난지 4년+1일 되는날 결혼 = 1463일)
-                        </h6>
-                    </div>
-                <div class="row">
-                    <div class="col-md-7 col-sm-12">
-                        <div class="my-3">
-                            <div class="h4">웨딩 본식</div>
-                            <ul>
-                                <li>
-                                    <i class="text-muted fas fa-map-marker-alt"></i>
-                                    <span class="pl-2 text-muted">부산 해운대 우동 센텀사이언스 파크 23층</span>
-                                </li>
-                                <li class="pt-2">
-                                    <i class="text-muted far fa-calendar-alt"></i>
-                                    <span class="pl-2 text-muted">2019년 5월 18일, 2:30PM</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12">
-                        <div class="my-3">
-                            <img alt="Wedding Party" class="img-fluid" src="images/wedding-party.jpg"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-7 col-sm-12">
-                        <div class="my-3">
-                            <div class="h4">식사</div>
-                            <ul>
-                                <li>
-                                    <i class="text-muted fas fa-map-marker-alt "></i>
-                                    <span class="pl-2 text-muted">부산 해운대 우동 센텀사이언스 파크 지하 1층 더파티 센텀점</span>
-                                </li>
-                                <li class="pt-2">
-                                    <i class="text-muted far fa-calendar-alt "></i>
-                                    <span class="pl-2 text-muted">2019년 5월 18일, 2:30PM - 4:30PM</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12">
-                        <div class="my-3"><img alt="Reception" class="img-fluid" src="images/reception.jpg"/></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ww-section" id="gallery">
-            <div class="ww-photo-gallery">
-                <div class="container">
-                    <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">포토 갤러리</h2>
-                    <div class="ww-gallery">
-                        <div class="card-columns">
-                            <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
-                                <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 2" class="img-fluid" src="images/pic2.jpeg"/>
-                                </a>
-                            </div>
-                            <div class="card" data-groups="[&quot;vacation&quot;]">
-                                <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 3" class="img-fluid" src="images/pic3.jpeg"/>
-                                </a>
-                            </div>
-                            <div class="card" data-groups="[&quot;party&quot;,&quot;vacation&quot;]">
-                                <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 4" class="img-fluid" src="images/pic4.jpeg"/>
-                                </a>
-                            </div>
-                            <div class="card" data-groups="[&quot;vacation&quot;]">
-                                <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 5" class="img-fluid" src="images/pic6.jpeg"/>
-                                </a>
-                            </div>
-                            <div class="card"
-                                 data-groups="[&quot;wedding&quot;,&quot;ceremony&quot;,&quot;party&quot;]">
-                                <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 6" class="img-fluid" src="images/pic7.jpeg"/>
-                                </a>
-                            </div>
-                            <div class="card" data-groups="[&quot;vacation&quot;]">
-                                <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 7" class="img-fluid" src="images/pic5.jpeg"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       <div class="ww-section parallax-window  text-white" data-parallax="scroll" data-image-src="images/gift/gift-background.jpg" id="gifts">
-            <div class="ww-gift-section">
-                <div class="container">
-                    <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">Gift for our
-                        wedding</h2>
-                    <div class="col text-center mb-5">
-                        <h6 style="font-family: 'Noto Serif KR', serif;">
-                            저희 부부가 앞으로 살아나갈 일상에<br>
-                            오래도록 특별한 기억을 선물하고 싶으신가요?<br>
-                            그렇다면 고민하는 대신 아래 목록을 참고해 주세요.<br>
-                            저희가 필요로 하는 물건들을 정리해 두었습니다.<br>
-                            애정어린 마음으로 보내주신 선물은<br>
-                            가까이 두어 오래도록 아껴 쓰고,<br>
-                            소중하게 간직하겠습니다.
-                            <br><br>
-                            (아래 선물버튼을 눌러 신랑, 신부에게 예약메시지를 보내세요!)
-                        </h6>
-                    </div>
-                    <div class="ww-gift">
-                        <div class="gift-columns">
-                            <div class="gift">
-                                <img alt="와인셀러" class="img-fluid gift-img gift-selected" src="images/gift/wineceller.png"/>
-                                <div class="btn-group gift-btn-group" role="group">
-                                    <button class="btn btn-default gift-btn"
-                                            onclick="window.open('https://smartstore.naver.com/dhk00840/products/4311205513')">
-                                        <i class="fa fa-search"></i></button>
-                                    <button class="btn btn-default gift-btn gift-send" data-name="와인셀러"
-                                            onclick="alert('다른분에게 예약된 선물입니다.');"><i
-                                            class="fa fa-gift"></i></button>
-                                </div>
-                            </div>
-                            <div class="gift">
-                                <img alt="전동클렌저" class="img-fluid gift-img gift-selected"
-                                     src="images/gift/philips_clenser.png"/>
-                                <div class="btn-group gift-btn-group" role="group">
-                                    <button class="btn btn-default gift-btn"
-                                            onclick="window.open('https://www.philips.co.kr/c-p/BSC111_06/visapure-mini-facial-cleanser')">
-                                        <i class="fa fa-search"></i></button>
-                                    <button class="btn btn-default gift-btn gift-send" data-name="전동클렌저"
-                                            onclick="alert('다른분에게 예약된 선물입니다.');"><i
-                                            class="fa fa-gift"></i></button>
-                                </div>
-                            </div>
-                            <div class="gift">
-                                <img alt="드라이기" class="img-fluid gift-img gift-selected" src="images/gift/dyson.png"/>
-                                <div class="btn-group gift-btn-group" role="group">
-                                    <button class="btn btn-default gift-btn"
-                                            onclick="window.open('https://www.kr.dyson.com/products/hair-care/dyson-supersonic-hair-dryer')">
-                                        <i class="fa fa-search"></i></button>
-                                    <button  class="btn btn-default gift-btn gift-send" data-name="드라이기"
-                                             onclick="alert('다른분에게 예약된 선물입니다.');"><i
-                                            class="fa fa-gift"></i></button>
-                                </div>
-                            </div>
-                            <div class="gift">
-                                <img alt="믹서기" class="img-fluid gift-img gift-selected" src="images/gift/blender.png"/>
-                                <div class="btn-group gift-btn-group" role="group">
-                                    <button class="btn btn-default gift-btn"
-                                            onclick="window.open('http://jenniferoom.co.kr/product/detail.html?product_no=85&cate_no=24&display_group=1')">
-                                        <i class="fa fa-search"></i></button>
-                                    <button  class="btn btn-default gift-btn gift-send" data-name="믹서기"
-                                             onclick="alert('다른분에게 예약된 선물입니다.');"><i
-                                            class="fa fa-gift"></i></button>
-                                </div>
-                            </div>
-                            <div class="gift">
-                                <img alt="레고" class="img-fluid gift-img gift-selected" src="images/gift/lego.png"/>
-                                <div class="btn-group gift-btn-group" role="group">
-                                    <button class="btn btn-default gift-btn"
-                                            onclick="window.open('https://shop.lego.com/ko-KR/product/10232')"><i
-                                            class="fa fa-search"></i></button>
-                                    <button class="btn btn-default gift-btn gift-send" data-name="레고"
-                                            
-                                             onclick="alert('다른분에게 예약된 선물입니다.');"><i
-                                            class="fa fa-gift"></i></button>
-                                </div>
-                            </div>
-                            <div class="gift">
-                                <img alt="전기레인지" class="img-fluid gift-img gift-selected" src="images/gift/range.png"/>
-                                <div class="btn-group gift-btn-group" role="group">
-                                    <button class="btn btn-default gift-btn"
-                                            onclick="window.open('https://www.lge.co.kr/lgekor/product/kitchen/electricRange/productDetail.do?cateId=4410&prdId=EPRD.333447')">
-                                        <i class="fa fa-search"></i></button>
-                                    <button class="btn btn-default gift-btn gift-send" data-name="전기레인지"
-                                            
-                                             onclick="alert('다른분에게 예약된 선물입니다.');"><i
-                                            class="fa fa-gift"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ww-section ww-rsvp-detail" id="map">
-            <div class="container">
-                <div class="col text-center">
-                    <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">오시는 길</h2>
-                    <div>
-                        <h5 style="font-family: 'Noto Serif KR', serif;">센텀사이언스파크웨딩홀 23층 스카이홀</h5>
-                        <h6 style="font-family: 'Noto Serif KR', serif;">(부산 해운대구 센텀중앙로 79)</h6>
-                    </div>
-                </div>
+    </body>
 
-                <div class="form-group">
-                    <div class="col-md-12">
-                        <div class="my-3 text-center">
-                            <a href="http://naver.me/5pTy3HCa">
-                                <img alt="naver-map" class="map-icon" id="naver-map"
-                                     src="images/map/naver-map.png"/>
-                            </a>
-                            <a href="http://dmaps.kr/2bms8">
-                                <img alt="kakao-map" class="map-icon" id="kakao-map"
-                                     src="images/map/kakao-map.png"/>
-                            </a>
-                            <a href="https://maps.app.goo.gl/jfDxw">
-                                <img alt="google-map" class="map-icon" id="google-map"
-                                     src="images/map/google-map.png"/>
-                            </a>
-                        </div>
-                        <div class="col text-center">
-                            <label style="font-family: 'Noto Serif KR', serif; font-size: 15px;">
-                                셔틀버스 - 센텀시티역 4번출구앞에서 15분 간격으로 운행
-                            </label>
-                        </div>
-                        <div class="my-3">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.297439052569!2d129.1238775160104!3d35.1741384652207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356892c2513ecf5d%3A0x7d362ece2091e2f8!2z7IS87YWA7IKs7J207Ja47Iqk7YyM7YGsIOy7qOuypOyFmO2ZgA!5e0!3m2!1sko!2skr!4v1554092125630!5m2!1sko!2skr" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
-        <div class="ww-section bg-light" id="comment">
-            <div class="ww-photo-gallery">
-                <div class="container">
-                    <div class="col text-center">
-                        <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">축하메시지</h2><br>
-                        <div id="comments"></div>
-                        <br>
-                        <div class="row">
-                            <div class="col text-center"><form action="https://github.com/AndersonChoi/wedding-card/blob/master/README.md">
-                                <button class="btn btn-primary btn-submit" type="submit">메시지 남기러 가기</button></form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-</div>
-<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="giftMailModal" role="dialog"
-     tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">선물하기 - <span id="gift-name"></span></h5>
-                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">보내는 분 성함</span>
-                    </div>
-                    <input aria-describedby="basic-addon3" class="form-control" id="sender-name" type="text">
-                </div>
-                <div class="input-group">
-                    <textarea aria-label="With textarea" class="form-control" id="sender-message"
-                              placeholder="신랑, 신부에게 선물 예약과 함께 보낼 메시지를 입력해주세요. 이 메시지는 신랑, 신부에게 발송됩니다." rows=4></textarea>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" id="reserveGiftButton" type="button">예약</button>
-            </div>
-        </div>
-    </div>
-</div>
-<footer></footer>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/parallax.min.js"></script>
-<script src="js/ekko-lightbox.min.js"></script>
-<script src="scripts/main.js"></script>
-
-<div class="bottom_right"><i class="fa fa-arrow-up fa-2x" id="go-to-top"></i>
-</div>
-
-<div class="bottom_left">
-    <audio id="player" src="mus.mp3"></audio>
-    <div>
-        <i class="fa fa-music fa-2x" onclick="document.getElementById('player').play()"></i>
-    </div>
-</div>
-
-</body>
+        
 </html>
