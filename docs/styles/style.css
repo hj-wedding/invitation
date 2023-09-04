@@ -38,7 +38,7 @@ img {
 .title {
     text-align: center; 
     color: #47B8E1; 
-    font-family: Pinyon Script; 
+    font-family: 'Pinyon Script', cursive;
     font-weight: 400; 
     letter-spacing: 0.72px; 
     word-wrap: break-word;
