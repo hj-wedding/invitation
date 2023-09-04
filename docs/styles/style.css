@@ -16,8 +16,11 @@ body {
     font-size: 16px; 
 }
 
+
 /* Apply max width to the content container */
 .container-custom {
+    background-color: #F4FCFF;
+
     max-width: 1024px;
     margin: 0 auto;
     padding: 20px;
