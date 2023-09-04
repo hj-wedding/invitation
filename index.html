@@ -63,7 +63,7 @@
         
         <div class="image-container">
             <!-- 갤러리 -->
-            <div class="title">Gallary</div>
+            <div class="title" style="padding-bottom: 20px;">Gallary</div>
             
 
             <div class="grid-container" id="gallery-grid">
@@ -214,12 +214,31 @@
                     </div>
                 </div>
             </div>
+
+            <div class="content" style="padding-top: 22px;">인스타그램 @hj_moment 계정에서 <br/>더 많은 사진을 감상하실 수 있습니다.</div>
         </div>
         <!-- 갤러리-->
 
-        <div class="image-container text-center">
-            <img style="width: 100%; height: 100%;" src="docs/img/Instagram Live-min.png" />
+        <!-- Instagram -->
+        <div style="height: 252px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 4px; display: flex" class="image-container">
+            <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 6px; display: flex">
+                <div style="align-self: stretch; text-align: center; color: #47B8E1; font-size: 36px; font-family: Pinyon Script; font-weight: 400; line-height: 66.96px; letter-spacing: 0.72px; word-wrap: break-word">On Air</div>
+            </div>
+            <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 24px; display: flex">
+                <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 11px; display: flex">
+                    <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word">참석이 어려운 분들을 위해<br/>@hj_moment 계정에서 <br/>인스타그램 라이브를 진행합니다. </div>
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                        <div style="text-align: center; color: #47B8E1; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word">*인스타그램 앱 설치와, 계정이 필요합니다.</div>
+                        <div style="text-align: center; color: #47B8E1; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word">*본식 이후 계정은 비공개 예정입니다.</div>
+                    </div>
+                </div>
+                <div style="padding-left: 24px; padding-right: 24px; padding-top: 6px; padding-bottom: 6px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
+                    <div style="width: 18px; height: 18px; position: relative; background-image: url(docs/svg/instagram.svg);"></div>
+                    <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word; cursor: pointer;" onclick="window.location='https://instagram.com/hj_moment?igshid=NzZhOTFlYzFmZQ=='">인스타그램 바로가기</div>
+                </div>
+            </div>
         </div>
+        <!-- Instagram -->
 
         <!-- contact-->
         <div style="padding-left: 5px; padding-right: 5px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 40px; display: flex">
@@ -328,15 +347,32 @@
             <div class="modal" id="account_popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
-                        <div class="modal-body" id="popup-p">...</div>
+                        <!-- <div class="modal-body" id="popup-p">...</div>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-secondary test"onclick="copy()">복사하기</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                        </div> -->
+                        <div style="align-self: stretch; height: 40px; background: white; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                            <div style="flex: 1 1 0; align-self: stretch; padding: 10px; background: white; border-radius: 8px"></div>
+                            <div style="width: 40px; align-self: stretch; padding: 10px; background: white; border-radius: 8px; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                                <div data-dismiss="modal" style="width: 18px; height: 18px; position: relative; background-image: url(docs/svg/close.svg);" onclick="modalClose()"></div>
+                            </div>
+                        </div>
+                        <div style="align-self: stretch; padding-left: 32px; padding-right: 32px; padding-top: 16px; padding-bottom: 16px; background: white; justify-content: center; align-items: center; display: inline-flex">
+                            <div style="text-align: center; color: #097AAA; font-size: 16px; font-family: MaruBuriOTF; font-weight: 400; line-height: 26.08px; word-wrap: break-word" id="popup-p">우리은행 <br/>1002-645-967586<br/>한혜진</div>
+                        </div>
+                        <div style="align-self: stretch; height: 75px; padding-top: 16px; padding-bottom: 24px; padding-left: 32px; padding-right: 32px; background: white; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: flex">
+                            <div style="padding-left: 24px; padding-right: 24px; padding-top: 6px; padding-bottom: 6px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
+                                <div style="width: 12px; height: 12px; position: relative; background: url(docs/svg/account.svg);"  id=copy_svg></div>
+                                <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word" onclick="copy()" id="copy_btn">계좌번호 복사하기</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="alert alert-secondary" id="copy_alert" role="alert">복사되었습니다</div>
             </div>
+
+
+
         </div>
 
        
@@ -410,15 +446,23 @@
         }
 
         function copy() {
-            var alert = document.getElementById('copy_alert')
             text = document.getElementById('popup-p').innerText
+            copy_btn = document.getElementById('copy_btn');
+            copy_svg = document.getElementById('copy_svg');
             navigator.clipboard.writeText(text).then(() => {
                 console.log(text);
-                alert.style.display = 'block';
-                $("#copy_alert").fadeOut("slow");
+                copy_btn.innerHTML = '계좌번호 복사 완료!';
+                copy_svg.style.backgroundImage = "url('docs/svg/check.svg')";
             });
 
 
+        }
+
+        function modalClose() {
+            copy_btn = document.getElementById('copy_btn')
+            copy_btn.innerHTML = '계좌번호 복사하기';
+            copy_svg = document.getElementById('copy_svg');
+            copy_svg.style.backgroundImage = "url('docs/svg/account.svg')";
         }
 
         function popup(who) {
