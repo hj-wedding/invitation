@@ -152,3 +152,12 @@ img {
     /* max-height: 80%; */
     margin: 0; /* Center horizontally */
 }
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
