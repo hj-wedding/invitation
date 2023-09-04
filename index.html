@@ -10,12 +10,21 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
         <link href="docs/styles/main.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        <!-- <script src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script> -->
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+        
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+        <!-- carasual -->
+        <link href="docs/styles/bootstrap-modal-carousel.css" rel="stylesheet" />
+        <script src="docs/js/bootstrap-modal-carousel.js"></script>
+
     </head>
 
     <body>
@@ -155,6 +164,26 @@
                     </div>
                 </div>  
                 <!-- Gallary -->
+
+                <!-- Modal Gallary -->
+                <div style="width: 100%; height: 719px; position: relative">
+                    <div style="left: 132px; top: 0px; position: absolute; text-align: center; color: #47B8E1; font-size: 36px; font-family: Pinyon Script; font-weight: 400; line-height: 66.96px; letter-spacing: 0.72px; word-wrap: break-word">Gallery</div>
+                    <div style="left: 16px; top: 79px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: center; gap: 22px; display: inline-flex">
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                            <img src="docs/gallery/img1.jpg" id="myImg" data-toggle="modal" data-target="#mymodal">
+                            
+                            <div id="mymodal"  tabindex="-1" role="dialog" aria-hidden="true" style="width: 328px; height: 493px; position: relative; background: #D9D9D9">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <img src="docs/gallery/img1.jpg" class="modal-content" id="img01">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>  
+                <!-- Modal Gallary -->
 
                 <!-- Instagram -->
                 <div style="height: 252px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 4px; display: flex">
@@ -425,7 +454,25 @@
             //   captionText.innerHTML = dots[slideIndex-1].alt;
             }
         </script>
-        
+        <script type="text/javascript">
+            var modal = document.getElementById("mymodal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+        </script>
     </body>
 
         

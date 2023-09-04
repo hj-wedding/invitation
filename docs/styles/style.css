@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'MaruBuriOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply background color to the body */
+body {
+    background-color: #F4FCFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body covers the entire viewport height */
+    margin: 0; /* Remove default margin */
+    font-size: 16px; 
+}
+
+/* Apply max width to the content container */
+.container-custom {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-container {
+    margin-bottom: 70px; /* Create a 70px gap between images */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    text-align: center; 
+    color: #47B8E1; 
+    font-family: Pinyon Script; 
+    font-weight: 400; 
+    letter-spacing: 0.72px; 
+    word-wrap: break-word;
+    font-size: 2rem;
+}
+
+.content {
+    text-align: center; 
+    color: #097AAA; 
+    font-family: MaruBuriOTF; 
+    font-size: 0.8rem;
+    word-wrap: break-word"
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1rem; /* Adjust font size for smaller screens (14px) */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        font-size: 4rem; /* Adjust the font size for larger screens */
+    }
+}
+
+.fixed {
+    width: 328px; /* Adjust the width as needed */
+    height: 480px; /* 1.5 times the width to achieve a 1:1.5 aspect ratio */
+    opacity: 100%;
+    position: relative;
+    margin: 0 auto; /* Center the fixed-size div horizontally */
+    overflow: hidden; /* Hide content that overflows the div */
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-item {
+    justify-content: center;
+    align-items: center;
+
+}
+/* Adjust the size of the carousel images based on the div size */
+.carousel-item img {
+    max-width: 100%;
+    /* max-height: 100%; */
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* vertical-align: middle; */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+    max-width: 992px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+.grid-item {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(9.21, 121.76, 170, 0.10); /* Gray background color */
+    padding-top: 100%; /* Maintain a 1:1 aspect ratio */
+}
+
+.grid-item img {
+    max-width: 100%;
+    /* max-height: 100%; Ensure the image doesn't overflow */
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto; /* Center the image */
+}
+
+.carousel-item{
+    padding-left: 10%;
+    padding-left: 10%;
+
+
+}
+
+.modal {
+    /* ... (previous styles) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    /* ... (previous styles) */
+    display: block;
+    /* max-width: 80%; */
+    /* max-height: 80%; */
+    margin: 0; /* Center horizontally */
+}
