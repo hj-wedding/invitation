@@ -461,6 +461,8 @@
             console.log(text);
             copy_btn.innerHTML = '계좌번호 복사 완료!';
             copy_svg.style.backgroundImage = "url('docs/svg/check.svg')";
+            copy_svg.style.width = '18px';
+            copy_svg.style.height = '18px';
 
         }
 
@@ -492,7 +494,13 @@
                     number = '112'
                     break
             }
+            var copy_svn = document.getElementById('copy_svg')
             document.getElementById('popup-p').innerHTML = number
+            copy_svn.style.backgroundImage = "url('docs/svg/account.svg')";
+            copy_svg.style.width = '12px';
+            copy_svg.style.height = '12px';
+            document.getElementById('copy_btn').innerHTML = "계좌번호 복사하기";
+            
             console.log('popup')
             console.log(who)
         }
