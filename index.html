@@ -221,14 +221,133 @@
             <img style="width: 100%; height: 100%;" src="docs/img/Instagram Live-min.png" />
         </div>
 
-        <div class="image-container text-center">
+        <!-- contact-->
+        <div style="padding-left: 5px; padding-right: 5px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 40px; display: flex">
+            <div style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+                <div style="text-align: center; color: #47B8E1; font-size: 36px; font-family: Pinyon Script; font-weight: 400; line-height: 66.96px; letter-spacing: 0.72px; word-wrap: break-word">Contact</div>
+                <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word">마음으로 축하를 전하려는 분들을 위해<br/>연락처와 계좌번호를 남깁니다.</div>
+            </div>
+            <div style="height: 255px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
+                <div style="align-self: stretch; height: 85px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                    <div style="align-self: stretch; justify-content: space-between; align-items: center; gap: 40px; display: inline-flex">
+                        <div style="justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                            <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.32px; word-wrap: break-word">신랑</div>
+                            <div style="padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                                <div style="text-align: center; color: #097AAA; font-size: 20px; font-family: MaruBuriOTF; font-weight: 700; line-height: 37.20px; word-wrap: break-word">문혁준</div>
+                            </div>
+                        </div>
+                        <div style="justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                            <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                <div style="width: 12px; height: 12px; position: relative; background-image: url(docs/svg/phone.svg);"></div>
+                                <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="phoneCall('groom')">전화 연결</div>
+                            </div>
+                            <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; border-radius: 51px; border: 0.50px rgba(9.21, 121.76, 170, 0.60) solid; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                <div style="width: 12px; height: 12px; position: relative; background-image: url(docs/svg/account.svg);"></div>
+                                <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="popup('groom')" data-toggle="modal" data-target="#account_popup">계좌번호</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: space-between; align-items: center; gap: 40px; display: inline-flex">
+                        <div style="justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                            <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.32px; word-wrap: break-word">어머니</div>
+                            <div style="padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                                <div style="text-align: center; color: #097AAA; font-size: 16px; font-family: MaruBuriOTF; font-weight: 700; line-height: 29.76px; word-wrap: break-word">김형영</div>
+                            </div>
+                        </div>
+                        <div style="justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                            <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                <div style="width: 12px; height: 12px; position: relative; background-image: url(docs/svg/phone.svg);"></div>
+                                <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="phoneCall('groom_mom')">전화 연결</div>
+                            </div>
+                            <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; border-radius: 51px; border: 0.50px rgba(9.21, 121.76, 170, 0.60) solid; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                <div style="width: 12px; height: 12px; position: relative; background-image: url(docs/svg/account.svg);"></div>
+                                <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="popup('groom_mom')" data-toggle="modal" data-target="#account_popup">계좌번호</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="align-self: stretch; height: 130px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                    <div style="align-self: stretch; justify-content: space-between; align-items: center; gap: 40px; display: inline-flex">
+                        <div style="justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                            <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.32px; word-wrap: break-word">신부</div>
+                            <div style="padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                                <div style="text-align: center; color: #097AAA; font-size: 20px; font-family: MaruBuriOTF; font-weight: 700; line-height: 37.20px; word-wrap: break-word">한혜진</div>
+                            </div>
+                        </div>
+                        <div style="justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                            <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                <div style="width: 12px; height: 12px; position: relative; background-image: url(docs/svg/phone.svg);"></div>
+                                <div class="number" style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="phoneCall('bride')">전화 연결</div>
+                            </div>
+                            <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; border-radius: 51px; border: 0.50px rgba(9.21, 121.76, 170, 0.60) solid; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                <div style="width: 12px; height: 12px; position: relative; background-image: url(docs/svg/account.svg);"></div>
+                                <div class="account" style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="popup('bride')" data-toggle="modal" data-target="#account_popup">계좌번호</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; gap: 40px; display: inline-flex">
+                        <div style="justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                            <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.32px; word-wrap: break-word">아버지</div>
+                            <div style="padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                                <div style="text-align: center; color: #097AAA; font-size: 16px; font-family: MaruBuriOTF; font-weight: 700; line-height: 29.76px; word-wrap: break-word">한철영</div>
+                            </div>
+                        </div>
+                        <div style="justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                            <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                <div style="width: 12px; height: 12px; position: relative; background-image: url(docs/svg/phone.svg);"></div>
+                                <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="phoneCall('bride_dad')">전화 연결</div>
+                            </div>
+                            <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; border-radius: 51px; border: 0.50px rgba(9.21, 121.76, 170, 0.60) solid; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                <div style="width: 12px; height: 12px; position: relative; background-image: url(docs/svg/account.svg);"></div>
+                                <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="popup('bride_dad')" data-toggle="modal" data-target="#account_popup">계좌번호</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; gap: 40px; display: inline-flex">
+                        <div style="justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+                            <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.32px; word-wrap: break-word">어머니</div>
+                            <div style="padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                                <div style="text-align: center; color: #097AAA; font-size: 16px; font-family: MaruBuriOTF; font-weight: 700; line-height: 29.76px; word-wrap: break-word">강영미</div>
+                            </div>
+                        </div>
+                        <div style="justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                            <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                <div style="width: 12px; height: 12px; position: relative; background-image: url(docs/svg/phone.svg);"></div>
+                                <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="phoneCall('bride_mom')">전화 연결</div>
+                            </div>
+                            <div style="padding-top: 4px; padding-bottom: 4px; padding-left: 12px; padding-right: 14px; border-radius: 51px; border: 0.50px rgba(9.21, 121.76, 170, 0.60) solid; justify-content: center; align-items: center; gap: 2px; display: flex">
+                                <div style="width: 12px; height: 12px; position: relative; background-image: url(docs/svg/account.svg);"></div>
+                                <div style="text-align: center; color: #097AAA; font-size: 12px; font-family: MaruBuriOTF; font-weight: 400; line-height: 19.56px; word-wrap: break-word" onclick="popup('bride_mom')" data-toggle="modal" data-target="#account_popup">계좌번호</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <!-- Modal -->
+            <div class="modal" id="account_popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body" id="popup-p">...</div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary test"onclick="copy()">복사하기</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-secondary" id="copy_alert" role="alert">복사되었습니다</div>
+            </div>
+        </div>
+
+        <!-- contact -->
+        <!-- <div class="image-container text-center">
             <img style="width: 100%; height: 100%;" src="docs/img/Contact-min.png" />
         </div>
 
         
         <div class="image-container text-center">
             <img style="width: 100%; height: 100%;" src="docs/img/Ending-min.png" />
-        </div>
+        </div> -->
     </div>
 
     <!-- Add Bootstrap JavaScript (optional) -->
@@ -259,5 +378,82 @@
             $('#myModal').modal('show');
         });
     </script>
+
+    <script type="text/javascript">
+        const groom = ['01027709172', '농협 901066-51-146288 문혁준']
+        const groom_mom = ['01089612374', '농협은행 901066-52-225071']
+        const bride = ['01062019612', '우리은행 1002-645-967586']
+        const bride_mom = ['01051539612', '100033832559 토스뱅크 강영미']
+        const bride_dad = ['01063329612', '신한은행  110 111 740468']
+        var number_idx = 0
+        var account_idx = 1
+        
+        function phoneCall(who) {
+            switch(who) {
+                case 'groom':
+                    number = groom[number_idx];
+                    break;
+                case 'groom_mom':
+                    number = groom_mom[number_idx];
+                    break;
+                case 'bride':
+                    number = bride[number_idx];
+                    break;
+                case 'bride_mom':
+                    number = bride_mom[number_idx];
+                    break;
+                case 'bride_dad':
+                    number = bride_dad[number_idx];
+                    break;
+                default:
+                    number = '112'
+                    break
+            }
+            
+            console.log(number)
+            window.location.href = 'tel:' + number
+        }
+
+        function copy() {
+            var alert = document.getElementById('copy_alert')
+            text = document.getElementById('popup-p').innerText
+            navigator.clipboard.writeText(text).then(() => {
+                console.log(text);
+                alert.style.display = 'block';
+                $("#copy_alert").fadeOut("slow");
+            });
+
+
+        }
+
+        function popup(who) {
+            switch(who) {
+                case 'groom':
+                    number = groom[account_idx];
+                    break;
+                case 'groom_mom':
+                    number = groom_mom[account_idx];
+                    break;
+                case 'bride':
+                    number = bride[account_idx];
+                    break;
+                case 'bride_mom':
+                    number = bride_mom[account_idx];
+                    break;
+                case 'bride_dad':
+                    number = bride_dad[account_idx];
+                    break;
+                default:
+                    number = '112'
+                    break
+            }
+            document.getElementById('popup-p').innerHTML = number
+            console.log('popup')
+            console.log(who)
+        }
+
+    </script>
+
+
 </body>
 </html>
