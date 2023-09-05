@@ -476,8 +476,8 @@
             copy_btn = document.getElementById('copy_btn');
             copy_svg = document.getElementById('copy_svg');
 
-            if (window.clipboardData && window.clipboardData.setData) {
-                window.clipboardData.setData('Text', text);
+            if (window.clipboardData) {
+                window.clipboardData.setData('text/plain', text.toString());
                 console.log('Text successfully copied to clipboard in IE');
             } 
             else if (navigator.clipboard !== undefined) {
