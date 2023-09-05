@@ -33,7 +33,7 @@
             <div class="modal" id="myModal">
                 <!-- <div class="modal-dialog"> -->
                     
-                    <div class="modal-content" style="background: #F4FCFF; height: 100vh;">
+                    <div class="modal-content" style="background: transparent; height: 100vh;">
                         <button id="close-modal" type="button" class="close" data-dismiss="#modal" aria-label="Close" style="top: 5px; right: 5px; position: fixed;" >
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -427,9 +427,7 @@
         });
     </script>
 
-    <script type="text/javascript">
-        // import copy from 'node_modules/copy-to-clipboard';
-        
+    <script type="text/javascript">        
         const groom = ['01027709172', '농협<br/>901066-51-146288<br/>문혁준']
         const groom_mom = ['01089612374', '농협은행<br/>901066-52-225071<br/>김형영']
         const bride = ['01062019612', '우리은행<br/>1002-645-967586<br/>한혜진']
@@ -466,45 +464,41 @@
 
         const source = document.querySelector("#copy_btn");
 
-        source.addEventListener("copy", (event) => {
-            console.log("text");
-            text = document.getElementById('popup-p').innerText;
-            const selection = document.getSelection();
-            event.clipboardData.setData("text/plain", text);
-            event.preventDefault();
-        });
+        function copyToClipboard(text) {
+            
+            
+            if (window.clipboardData) {
+                window.clipboardData.setData('text/plain', text.toString());
+                console.log('Text successfully copied to clipboard in IE');
+                document.getElementById('popup-p').innerText = "window.clipboardData";
+            } 
+            if (navigator.clipboard) { // Check if the Clipboard API is supported
+                navigator.clipboard.writeText(text)
+                    .then(function() {
+                        alert("Text copied to clipboard");
+                    })
+                    .catch(function(err) {
+                        console.error("Unable to copy text: ", err);
+                    });
+            } else {
+                // Fallback for browsers that do not support the Clipboard API
+                var textArea = document.createElement("textarea");
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand("copy");
+                document.body.removeChild(textArea);
+                alert("Text copied to clipboard (fallback)");
+                document.getElementById('popup-p').innerText = "window.execCommand";
+            }
+        }
 
         function copy2() {
             text = document.getElementById('popup-p').innerText
             copy_btn = document.getElementById('copy_btn');
             copy_svg = document.getElementById('copy_svg');
 
-            if (window.clipboardData) {
-                window.clipboardData.setData('text/plain', text.toString());
-                console.log('Text successfully copied to clipboard in IE');
-            } 
-            else if (navigator.clipboard !== undefined) {
-                navigator.clipboard
-                    .writeText(text)
-                    .then(() => {
-                        console.log('navigator');
-                        console.log(text);
-                    });
-            } else {
-                const textArea = document.createElement('textarea');
-                textArea.value = text
-                textArea.style.display= none;
-                document.body.appendChild(textArea);
-                textArea.select();
-                textArea.setSelectionRange(0, 99999);
-                try {
-                    document.execCommand('copy');
-                } catch (err) {
-                    console.error('복사 실패', err);
-                }
-                textArea.setSelectionRange(0, 0);
-                document.body.removeChild(textArea);
-            }
+            copyToClipboard(text);
 
             copy_btn.innerHTML = '계좌번호 복사 완료!';
             copy_svg.style.backgroundImage = "url('docs/svg/check.svg')";
