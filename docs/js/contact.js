@@ -59,14 +59,14 @@ function copyToClipboard(text) {
     document.body.removeChild(textArea);
 }
 
-document.getElementById("copy_btn").addEventListener("click", function() {
-    text = document.getElementById('popup-p').innerText
-    copy_btn = document.getElementById('copy_btn');
-    copy_svg = document.getElementById('copy_svg');
-    copy_btn.innerHTML = '계좌번호 복사 완료!';
-    copy_svg.style.backgroundImage = "url('docs/svg/check.svg')";
-    copy_svg.style.width = '18px';
-    copy_svg.style.height = '18px';
+// document.getElementById("copy_btn").addEventListener("click", function() {
+//     text = document.getElementById('popup-p').innerText
+//     copy_btn = document.getElementById('copy_btn');
+//     copy_svg = document.getElementById('copy_svg');
+//     copy_btn.innerHTML = '계좌번호 복사 완료!';
+//     copy_svg.style.backgroundImage = "url('docs/svg/check.svg')";
+//     copy_svg.style.width = '18px';
+//     copy_svg.style.height = '18px';
 
 });
 
@@ -101,10 +101,8 @@ function popup(who) {
     var copy_svn = document.getElementById('copy_svg')
     var copy_btn = document.getElementById('copy_btn')
     document.getElementById('popup-p').innerHTML = number
-    copy_svn.style.backgroundImage = "url('docs/svg/account.svg')";
-    copy_svg.style.width = '12px';
-    copy_svg.style.height = '12px';
-    copy_btn.innerHTML = "계좌번호 복사하기";
-    console.log(copy_svn)
-    console.log(copy_btn)
+    // copy_svn.style.backgroundImage = "url('docs/svg/account.svg')";
+    // copy_svg.style.width = '12px';
+    // copy_svg.style.height = '12px';
+    // copy_btn.innerHTML = "계좌번호 복사하기";
 }
