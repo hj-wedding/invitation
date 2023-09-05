@@ -127,6 +127,7 @@
                     </div>
                     <div style="align-self: stretch; padding-left: 32px; padding-right: 32px; padding-top: 16px; padding-bottom: 16px; background: white; justify-content: center; align-items: center; display: inline-flex">
                         <div style="text-align: center; color: #097AAA; font-size: 16px; font-family: MaruBuriOTF; font-weight: 400; line-height: 26.08px; word-wrap: break-word" id="popup-p">우리은행 <br/>1002-645-967586<br/>한혜진</div>
+                        <textarea id="debug" style="display: none;"></textarea>
                     </div>
                     <div style="align-self: stretch; height: 75px; padding-top: 16px; padding-bottom: 24px; padding-left: 32px; padding-right: 32px; background: white; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: flex">
                         <div style="padding-left: 24px; padding-right: 24px; padding-top: 6px; padding-bottom: 6px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
@@ -517,14 +518,15 @@
             //         });var copyToClipboard = function (text) {
             // } 
             else {
-                var textArea = document.createElement("textarea");
-                textArea.value = text;
-                document.body.appendChild(textArea);
-                textArea.select();
-                textArea.setSelectionRange(0, 9999);
-                var successful = document.execCommand("copy");
-                document.body.removeChild(textArea);
-                document.getElementById('popup-p').innerText = successful + text + "window.execCommand";
+                var aus = document.getElementById('debug');
+                aus.value = text;
+                document.body.appendChild(aus);
+                aus.focus();
+                aus.select();
+                aus.setSelectionRange(0, 9999);
+                document.execCommand("copy");
+                console.log(aus)
+                document.getElementById('popup-p').innerText = "window.execCommand";
             }
         }
 
