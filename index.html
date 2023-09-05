@@ -131,7 +131,7 @@
                     <div style="align-self: stretch; height: 75px; padding-top: 16px; padding-bottom: 24px; padding-left: 32px; padding-right: 32px; background: white; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: flex">
                         <div style="padding-left: 24px; padding-right: 24px; padding-top: 6px; padding-bottom: 6px; background: #C4E7F6; border-radius: 51px; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
                             <div style="width: 12px; height: 12px; position: relative; background: url(docs/svg/account.svg);"  id=copy_svg></div>
-                            <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word" onclick="copy2()" id="copy_btn">계좌번호 복사하기</div>
+                            <div style="text-align: center; color: #097AAA; font-size: 14px; font-family: MaruBuriOTF; font-weight: 400; line-height: 22.82px; word-wrap: break-word" id="copy_btn">계좌번호 복사하기</div>
                         </div>
                     </div>
                 </div>
@@ -464,41 +464,69 @@
 
         const source = document.querySelector("#copy_btn");
 
-        function copyToClipboard(text) {
-            
-            
-            if (window.clipboardData) {
-                window.clipboardData.setData('text/plain', text.toString());
-                console.log('Text successfully copied to clipboard in IE');
-                document.getElementById('popup-p').innerText = "window.clipboardData";
-            } 
-            // else if (navigator.clipboard) { // Check if the Clipboard API is supported
-            //     navigator.clipboard.writeText(text)
-            //         .then(function() {
-            //             alert("Text copied to clipboard");
-            //         })
-            //         .catch(function(err) {
-            //             console.error("Unable to copy text: ", err);
-            //         });
-            // } 
-            else {
-                // Fallback for browsers that do not support the Clipboard API
-                // var textArea = document.createElement("textarea");
-                // textArea.value = text;
-                // document.body.appendChild(textArea);
-                // textArea.select();
-                // var successful = document.execCommand("copy");
-                // document.body.removeChild(textArea);
-                // alert(window.clipboardData);
-                // document.getElementById('popup-p').innerText = successful + text + "window.execCommand";
+        //계좌 클립보드 복사
+        $("#copy_btn").on('click', function (e) {
+            copy2();
+        });
+        
+        //클립보드 복사
+        var copyToClipboard = function (text) {
+            var aux = document.createElement("textarea");
+            aux.value = text;
+            document.body.appendChild(aux);
+            aux.select();
+            aux.setSelectionRange(0, 9999);
+            document.execCommand("copy");
+            document.body.removeChild(aux);
+            console.log(aux.value);
+        };
 
-                var result = window.clipboardData.setData('Text', text); // 클립보드 내용 수정하기
-                var txt = window.clipboardData.getData('Text'); // 클립보드 내용 가져오기
-                document.getElementById('popup-p').innerText = txt + text + "window.execCommand";
+        //팝업창 표시
+        var toastPopup = function (msg, timer) {
+            var $elem = $("<p>" + msg + "</p>");
+
+            $("div.toast").html($elem).show();
+
+            $elem.slideToggle(100, function () {
+                setTimeout(function () {
+                    $elem.fadeOut(function () {
+                        $(this).remove();
+                        $('div.toast').css('bottom', '');
+                    });
+                }, timer);
+                return false;
+            });
+
+            $('div.toast').stop().animate({ 'bottom': '5%' });
+        };
 
 
-            }
-        }
+        // function copyToClipboard(text) {          
+        //     if (window.clipboardData) {
+        //         window.clipboardData.setData('text/plain', text.toString());
+        //         console.log('Text successfully copied to clipboard in IE');
+        //         document.getElementById('popup-p').innerText = "window.clipboardData";
+        //     } 
+        //     // else if (navigator.clipboard) { // Check if the Clipboard API is supported
+        //     //     navigator.clipboard.writeText(text)
+        //     //         .then(function() {
+        //     //             alert("Text copied to clipboard");
+        //     //         })
+        //     //         .catch(function(err) {
+        //     //             console.error("Unable to copy text: ", err);
+        //     //         });var copyToClipboard = function (text) {
+        //     // } 
+        //     else {
+        //         var textArea = document.createElement("textarea");
+        //         textArea.value = text;
+        //         document.body.appendChild(textArea);
+        //         textArea.select();
+        //         textArea.setSelectionRange(0, 9999);
+        //         var successful = document.execCommand("copy");
+        //         document.body.removeChild(textArea);
+        //         document.getElementById('popup-p').innerText = successful + text + "window.execCommand";
+        //     }
+        // }
 
         function copy2() {
             text = document.getElementById('popup-p').innerText
