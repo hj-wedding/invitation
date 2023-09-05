@@ -489,6 +489,7 @@
                 textArea.select();
                 document.execCommand("copy");
                 document.body.removeChild(textArea);
+                alert(window.clipboardData);
                 document.getElementById('popup-p').innerText = text + "window.execCommand";
             }
         }
