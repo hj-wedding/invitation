@@ -470,16 +470,16 @@
         });
         
         //클립보드 복사
-        var copyToClipboard = function (text) {
-            var aux = document.createElement("textarea");
-            aux.value = text;
-            document.body.appendChild(aux);
-            aux.select();
-            aux.setSelectionRange(0, 9999);
-            document.execCommand("copy");
-            document.body.removeChild(aux);
-            console.log(aux.value);
-        };
+        // var copyToClipboard = function (text) {
+        //     var aux = document.createElement("textarea");
+        //     aux.value = text;
+        //     document.body.appendChild(aux);
+        //     aux.select();
+        //     aux.setSelectionRange(0, 9999);
+        //     document.execCommand("copy");
+        //     document.body.removeChild(aux);
+        //     console.log(aux.value);
+        // };
 
         //팝업창 표시
         var toastPopup = function (msg, timer) {
@@ -501,32 +501,32 @@
         };
 
 
-        // function copyToClipboard(text) {          
-        //     if (window.clipboardData) {
-        //         window.clipboardData.setData('text/plain', text.toString());
-        //         console.log('Text successfully copied to clipboard in IE');
-        //         document.getElementById('popup-p').innerText = "window.clipboardData";
-        //     } 
-        //     // else if (navigator.clipboard) { // Check if the Clipboard API is supported
-        //     //     navigator.clipboard.writeText(text)
-        //     //         .then(function() {
-        //     //             alert("Text copied to clipboard");
-        //     //         })
-        //     //         .catch(function(err) {
-        //     //             console.error("Unable to copy text: ", err);
-        //     //         });var copyToClipboard = function (text) {
-        //     // } 
-        //     else {
-        //         var textArea = document.createElement("textarea");
-        //         textArea.value = text;
-        //         document.body.appendChild(textArea);
-        //         textArea.select();
-        //         textArea.setSelectionRange(0, 9999);
-        //         var successful = document.execCommand("copy");
-        //         document.body.removeChild(textArea);
-        //         document.getElementById('popup-p').innerText = successful + text + "window.execCommand";
-        //     }
-        // }
+        function copyToClipboard(text) {          
+            if (window.clipboardData) {
+                window.clipboardData.setData('text/plain', text.toString());
+                console.log('Text successfully copied to clipboard in IE');
+                document.getElementById('popup-p').innerText = "window.clipboardData";
+            } 
+            // else if (navigator.clipboard) { // Check if the Clipboard API is supported
+            //     navigator.clipboard.writeText(text)
+            //         .then(function() {
+            //             alert("Text copied to clipboard");
+            //         })
+            //         .catch(function(err) {
+            //             console.error("Unable to copy text: ", err);
+            //         });var copyToClipboard = function (text) {
+            // } 
+            else {
+                var textArea = document.createElement("textarea");
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                textArea.setSelectionRange(0, 9999);
+                var successful = document.execCommand("copy");
+                document.body.removeChild(textArea);
+                document.getElementById('popup-p').innerText = successful + text + "window.execCommand";
+            }
+        }
 
         function copy2() {
             text = document.getElementById('popup-p').innerText
