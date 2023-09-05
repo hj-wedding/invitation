@@ -487,10 +487,10 @@
                 textArea.value = text;
                 document.body.appendChild(textArea);
                 textArea.select();
-                document.execCommand("copy");
+                var successful = document.execCommand("copy");
                 document.body.removeChild(textArea);
                 alert(window.clipboardData);
-                document.getElementById('popup-p').innerText = text + "window.execCommand";
+                document.getElementById('popup-p').innerText = successful + text + "window.execCommand";
             }
         }
 
