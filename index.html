@@ -34,7 +34,7 @@
                 <!-- <div class="modal-dialog"> -->
                     
                     <div class="modal-content" style="background: transparent; height: 100vh;">
-                        <button id="close-modal" type="button" class="close" data-dismiss="#modal" aria-label="Close" style="top: 5px; right: 5px; position: fixed;" >
+                        <button id="close-modal" type="button" class="close" data-dismiss="#modal" aria-label="Close" style="z-index: 1001; top: 5px; right: 5px; position: fixed;" >
                             <span aria-hidden="true">&times;</span>
                         </button>
 
@@ -483,14 +483,20 @@
             // } 
             else {
                 // Fallback for browsers that do not support the Clipboard API
-                var textArea = document.createElement("textarea");
-                textArea.value = text;
-                document.body.appendChild(textArea);
-                textArea.select();
-                var successful = document.execCommand("copy");
-                document.body.removeChild(textArea);
-                alert(window.clipboardData);
-                document.getElementById('popup-p').innerText = successful + text + "window.execCommand";
+                // var textArea = document.createElement("textarea");
+                // textArea.value = text;
+                // document.body.appendChild(textArea);
+                // textArea.select();
+                // var successful = document.execCommand("copy");
+                // document.body.removeChild(textArea);
+                // alert(window.clipboardData);
+                // document.getElementById('popup-p').innerText = successful + text + "window.execCommand";
+
+                var result = window.clipboardData.setData('Text', text); // 클립보드 내용 수정하기
+                var txt = window.clipboardData.getData('Text'); // 클립보드 내용 가져오기
+                document.getElementById('popup-p').innerText = txt + text + "window.execCommand";
+
+
             }
         }
 
