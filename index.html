@@ -489,7 +489,6 @@
                 textArea.select();
                 document.execCommand("copy");
                 document.body.removeChild(textArea);
-                alert("Text copied to clipboard (fallback)");
                 document.getElementById('popup-p').innerText = text + "window.execCommand";
             }
         }
