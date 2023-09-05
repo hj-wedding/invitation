@@ -7,12 +7,6 @@ var number_idx = 0
 var account_idx = 1
 var text_idx = 2
 
-function modalClose() {
-    copy_btn = document.getElementById('copy_btn')
-    copy_btn.innerHTML = '계좌번호 복사하기';
-    copy_svg = document.getElementById('copy_svg');
-    copy_svg.style.backgroundImage = "url('docs/svg/account.svg')";
-}
 
 function phoneCall(who) {
     switch(who) {
