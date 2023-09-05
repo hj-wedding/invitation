@@ -68,7 +68,7 @@ function copyToClipboard(text) {
 //     copy_svg.style.width = '18px';
 //     copy_svg.style.height = '18px';
 
-});
+// });
 
 function popup(who) {
     switch(who) {
