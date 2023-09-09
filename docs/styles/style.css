@@ -53,6 +53,34 @@ img {
     word-wrap: break-word"
 }
 
+.contact-1 {
+    font-size: 12px;
+}
+
+.contact-2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contact-3 {
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.contact-wrapper{
+    align-self: stretch; 
+    justify-content: space-between; 
+    align-items: center; 
+    display: inline-flex;
+}
+
+@media screen and (min-width: 360px) {
+    .contact-wrapper {
+        gap: 20px
+    }
+}
+  
 
 .grid-container {
     display: grid;
